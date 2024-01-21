@@ -1,0 +1,189 @@
+body {
+  background-color: rgb(16, 44, 84);
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+table {
+  margin: 30px auto 20px;
+  width: 50vw;
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+thead th:nth-child(1),
+tbody td:nth-child(1) {
+  width: 5%;
+}
+
+thead th:nth-child(2),
+tbody td:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3),
+tbody td:nth-child(3) {
+  width: 20%;
+}
+
+thead th:nth-child(4),
+tbody td:nth-child(4) {
+  width: 50%;
+}
+
+thead th:nth-child(5),
+tbody td:nth-child(5) {
+  width: 8%;
+}
+
+th,
+td {
+  padding: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(27, 85, 131);
+  transition: background-color 0.4s;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(0, 65, 106);
+  transition: background-color 0.4s;
+}
+
+tr:hover {
+  background-color: rgb(0, 52, 84);
+}
+
+.tr-active {
+  color: rgb(208, 255, 0);
+}
+
+.thead tr {
+  background-color: rgb(14, 41, 75);
+  cursor: default;
+}
+
+.textAbout {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dialog {
+  position: fixed;
+  left: auto;
+  right: 66px;
+  top: 41%;
+  translate: 0 -50%;
+  margin: 0;
+  height: 660px;
+  width: 360px;
+  background-color: rgb(14, 41, 75);
+  padding: 20px;
+  border-radius: 40px;
+  border: 0;
+}
+
+.editing-text {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.editing-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-wrapper {
+  margin-bottom: 24px;
+}
+
+.input-field {
+  font-size: 20px;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.input-about {
+  width: 250px;
+  height: 246px;
+  resize: none;
+}
+
+.input-text {
+  display: flex;
+  padding: 5px 0;
+  color: rgb(217, 61, 98);
+  font-size: 22px;
+}
+
+.editing-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editing-btn {
+  font-size: 20px;
+  border-radius: 14px;
+  width: 150px;
+}
+
+.editing-btn:active {
+  opacity: 0.5;
+  transition: opacity 0.1s;
+}
+
+.editing-btn-close {
+  background-color: rgb(172, 13, 13);
+  padding: 10px;
+}
+
+.editing-btn-confirm {
+  background-color: green;
+  padding: 10px;
+}
+
+.pagination {
+  width: max-content;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: rgb(14, 41, 75);
+  border-radius: 30px;
+}
+
+.pagination__list {
+  display: flex;
+}
+
+.pagination__item {
+  font-size: 24px;
+  margin: 0 20px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.pagination__item--active {
+  color: rgb(217, 61, 98);
+}

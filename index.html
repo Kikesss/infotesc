@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание ИнфоТеКС</title>
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <dialog class="dialog">
+        <form method="dialog" class="form">
+          <p class="editing-text">
+            Редактирование <span class="count-string"></span> строки
+          </p>
+          <div class="editing-input">
+            <div class="input-wrapper">
+              <span class="input-text">Имя:</span>
+              <input class="input-field input-firstName" type="text" />
+            </div>
+            <div class="input-wrapper">
+              <span class="input-text">Фамилия:</span>
+              <input class="input-field input-lastName" type="text" />
+            </div>
+            <div class="input-wrapper">
+              <span class="input-text">Описание:</span>
+              <textarea
+                class="input-field input-about"
+                name="comment"
+              ></textarea>
+            </div>
+            <div class="input-wrapper">
+              <span class="input-text">Цвет глаз:</span>
+              <input class="input-field input-eye_color" type="text" />
+            </div>
+          </div>
+
+          <div class="editing-action">
+            <div>
+              <button class="editing-btn editing-btn-close">Отмена</button>
+            </div>
+
+            <div>
+              <button class="editing-btn editing-btn-confirm" type="submit">
+                Подтвердить
+              </button>
+            </div>
+          </div>
+        </form>
+      </dialog>
+
+      <table class="table">
+        <thead class="thead">
+          <tr class="headerRow">
+            <th>
+              <button class="sortButtonNumber">Номер▼</button>
+            </th>
+            <th>
+              <button class="sortButtonName">Имя▼</button>
+            </th>
+            <th>
+              <button class="sortButtonLastName">Фамилия▼</button>
+            </th>
+            <th>
+              <button class="sortButtonAbout">Описание▼</button>
+            </th>
+            <th>
+              <button class="sortButtonEyeColor">Цвет глаз▼</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="tableBody"></tbody>
+      </table>
+
+      <div class="pagination"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
