@@ -13,7 +13,7 @@
 1. Склонировать репозиторий:
 
 ```sh
-git clone git@github.com:kikesss/infotecs.git
+git clone git@github.com:kikesss/infotesc.git
 ```
 
 2. Перейти в директорию склонированного репозитория и запустить установку зависимостей:
